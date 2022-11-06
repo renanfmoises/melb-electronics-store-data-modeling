@@ -1,5 +1,6 @@
 # Project specific
 data/raw/original_data.csv
+data/relational
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
