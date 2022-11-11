@@ -1,0 +1,64 @@
+# Customers table
+python run_etl.py \
+    -u=root \
+    -p=root \
+    -H=localhost \
+    -P=5432 \
+    -D=melb_db \
+    -f=/Users/renan/Projects/melb-electronics-store-data-modeling/data/relational/customers.csv \
+    -t=customers
+
+# Order items table
+python run_etl.py \
+    -u=root \
+    -p=root \
+    -H=localhost \
+    -P=5432 \
+    -D=melb_db \
+    -f=/Users/renan/Projects/melb-electronics-store-data-modeling/data/relational/order_items.csv \
+    -t=order_items
+
+# Order reviews table
+python run_etl.py \
+    -u=root \
+    -p=root \
+    -H=localhost \
+    -P=5432 \
+    -D=melb_db \
+    -f=/Users/renan/Projects/melb-electronics-store-data-modeling/data/relational/order_reviews.csv \
+    -t=order_reviews
+
+# Orders table
+python run_etl.py \
+    -u=root \
+    -p=root \
+    -H=localhost \
+    -P=5432 \
+    -D=melb_db \
+    -f=/Users/renan/Projects/melb-electronics-store-data-modeling/data/relational/orders.csv \
+    -t=orders
+    -d \
+        --datetime_columns=date
+
+# Products table
+python run_etl.py \
+    -u=root \
+    -p=root \
+    -H=localhost \
+    -P=5432 \
+    -D=melb_db \
+    -f=/Users/renan/Projects/melb-electronics-store-data-modeling/data/relational/products.csv \
+    -t=products
+
+# Warehouses table
+python run_etl.py \
+    -u=root \
+    -p=root \
+    -H=localhost \
+    -P=5432 \
+    -D=melb_db \
+    -f=/Users/renan/Projects/melb-electronics-store-data-modeling/data/relational/warehouses.csv \
+    -t=warehouses
+
+
+
